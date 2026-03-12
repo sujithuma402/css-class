@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Portfoloi0 Gallery Structure</title>
+    </head>
+    <body>
+        <div class="gallery">
+            <div class="featured">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </body>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .featured{
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+        .gallery div{
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+    </style>
+</html>

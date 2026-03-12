@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>SALE</title>
+        <div class="product-card">
+            <img src="image.jpg"alt="Product Image">
+            <h2>Product Title</h2>
+            <p>$99.99</p>
+            <span class="sale-badge">SALE</span>
+        </div>
+        <style>
+            .product-card{
+                width:300px;
+                position:relative;
+            }
+            .sale-badge{
+                position:absolute
+                top:-10px;
+                right:-10px;
+                z-index:5;
+            }
+            .product-card h2,.product-card p{
+                display: block;
+            }
+        </style>
+        </head>
+        </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="calendar">
+            <div class="date-heading">Date</div>
+            <div class="morning">Morning</div>
+            <div class="afternoon">Afternoon</div>
+            <div class="evening">Evening</div>
+        </div>
+    </body>
+    <style>
+        .calender{
+            display:grid;
+            grid-template-columns: 100px 3fr;
+            grid-template-rows: auto 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        .date-heading{
+            grid-template-columns: 1/ span 2;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</html>
